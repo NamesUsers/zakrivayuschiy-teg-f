@@ -15,6 +15,26 @@
   min-block-size: 100dvb;
   font-family: var(--inter), sans-serif;
   color: rgb(0, 0, 0);
+  background-image:linear-gradient(
+    to bottom,
+    rgba(231, 231, 231, 0.01),
+    #e7e7e7
+  ),
+  repeating-linear-gradient(
+    to right,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px 
+  );
+  background-size: cover;
 }
 
 .header {
@@ -122,6 +142,7 @@
   font-weight: var(--fw-main);
   line-height: 21px;
   letter-spacing: 0%;
+  text-shadow: 1px 1px black;
 }
 
 .card__main-text {
@@ -140,20 +161,33 @@
   align-items: center;
   border: none;
 }
+
+.card__icon-button:focus {
+  border:none;
+  outline: none;
+}
+
 .like-icon {
   margin-right: 12px;
 }
 .card__like-button {
   border: 2px solid rgb(0, 0, 0);
   padding: 9px 17px;
+  cursor: pointer;
+  background-color: transparent;
 }
+
 .button__text {
-  
+  position: relative;
   font-family: var(--pressstart2p);
   font-size: 14px;
   font-weight: var(--fw-main);
   line-height: 90%;
   letter-spacing: 0%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out ;
+  color: white;
+  mix-blend-mode: difference;
 }
 
 
@@ -210,6 +244,12 @@
 .floppy {
   max-width: 39px;
   max-height: 39px;
+  mix-blend-mode: difference;
+  fill: white;
+}
+
+.floppy-rect {
+  fill: white;
 }
 
 .dialog__content-text {
@@ -263,4 +303,34 @@
     margin-left: 0;
     margin-top: 8px;
   }
+}
+
+
+/* =================================================================== */
+/* =================================================================== */
+
+.active__btn {  
+  transition: all 0.3s ;
+  position: relative;
+  box-shadow: 2px 2px 0px tra;
+}
+.active__btn:focus {  
+  box-shadow: 2px 2px 0px black;
+  transition: all 0.3s ;
+}
+
+.active__btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  transition: width 0.5s ease-in-out ;
+}
+
+.active__btn:hover::before {
+  width: 100%;
+  transition: width 0.5s ease-in-out ;
 }
