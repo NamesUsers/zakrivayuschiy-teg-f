@@ -345,15 +345,15 @@
 /* =================================================================== */
 /* =================================================================== */
 
-.active__btn {  
-  transition: box-shadow 0.3s ;
+.active__btn {
+  transition: box-shadow 0.3s;
   position: relative;
   box-shadow: 2px 2px 0px transparent;
 }
 
-.active__btn:focus {  
+.active__btn:focus {
   box-shadow: 2px 2px 0px black;
-  transition: box-shadow 0.3s ;
+  transition: box-shadow 0.3s;
 }
 
 
