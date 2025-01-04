@@ -101,7 +101,10 @@
 .card__inner {
   margin: auto;
   background: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
   max-width: 700px;
   width: 100%;
 }
@@ -162,7 +165,6 @@
   font-weight: var(--fw-main);
   line-height: 21px;
   letter-spacing: 0%;
-  text-shadow: 1px 1px black;
 }
 
 .card__main-text {
