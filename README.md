@@ -1,1 +1,1 @@
-https://namesusers.github.io/zakrivayuschiy-teg-f/
+https://github.com/namesusers/zakrivayuschiy-teg-f
