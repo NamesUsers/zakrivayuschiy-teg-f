@@ -125,9 +125,8 @@
 }
 
 .card__img {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .card__img-des {
@@ -155,7 +154,6 @@
 
 .card__main-content {
   padding: 25px;
-  border-top: 1px solid #000;
 }
 
 .card__text {
