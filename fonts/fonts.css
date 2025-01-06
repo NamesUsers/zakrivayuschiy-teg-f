@@ -6,7 +6,8 @@
     local("Inter"),
     url("../fonts/Inter-Variable.woff2") format('woff2 supports variations'),
     url("../fonts/Inter-Variable.woff2") format('woff2-variations');
-    font-variation-settings:'wght' var(--fw-main) 'wght' var(--fw-accent-variation);
+  font-weight: 400 785;
+  font-variation-settings:'wght' var(--fw-main) 'wght' var(--fw-accent-variation);
 }
 
 @font-face {
