@@ -10,7 +10,11 @@
 
 */
 
-
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: var(--inter), sans-serif;
+  }
+}
 
 .page {
   min-inline-size: 320px;
@@ -20,7 +24,7 @@
   background-attachment: fixed;
   background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-size: cover;
-  font-variation-settings: var(--fw-main-variation) ;
+  font-variation-settings:'wght' var(--fw-main) ;
 }
 
 .header {
@@ -36,7 +40,7 @@
   align-items: center;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-variation-settings: var(--fw-main-variation);
+  font-variation-settings:'wght' var(--fw-main);
   padding: clamp(7.5rem, 7.2111rem + 1.2327vw, 8rem) clamp(0.875rem, -2.9709rem + 16.4092vw, 7.531rem);
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 0, 0);
@@ -134,7 +138,7 @@
 
 .card__text {
   font-size: 18px;
-  font-variation-settings: var(--fw-main-variation);
+  font-variation-settings:'wght' var(--fw-main);
   line-height: 21px;
   letter-spacing: normal;
 }
@@ -418,3 +422,4 @@
   fill: var(--heart-sparks);
   transition: fill 0.3s 0.06s linear;
 }
+
