@@ -10,11 +10,7 @@
 
 */
 
-@supports (font-variation-settings: normal) {
-  .page {
-      font-family: var(--inter), sans-serif;
-  }
-}
+
 
 .page {
   min-inline-size: 320px;
