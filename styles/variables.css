@@ -2,8 +2,10 @@
 :root {
   --inter: "Inter";
   --pressstart2p: "PressStart2P";
-  --fw-main:400;
-  --fw-accent:700;
+  --fw-main: 400;
+  --fw-accent: 700;
+  --fw-main-variation:'wght' 400;
+  --fw-accent-variation:'wght' 700;
   --text-stroke-color: #fff;
   --heart-counter:#000;
   --heart-sparks:#FF0000;
