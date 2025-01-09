@@ -20,7 +20,7 @@
   background-attachment: fixed;
   background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-size: cover;
-  font-variation-settings:'wght' var(--fw-main) 'wght' var(--fw-accent-variation);
+  font-variation-settings:'wght' var(--fw-main);
 }
 
 .header {
@@ -79,7 +79,7 @@
 .card__name {
   padding: 5px 10px;
   font-size: 18px;
-  font-variation-settings:'wght' var(--fw-accent-variation);
+  font-variation-settings:'wght' var(--fw-accent);
   line-height: 22px;
   letter-spacing: normal;
   text-align: left;
@@ -101,13 +101,7 @@
   object-fit: cover;
 }
 
-@supports (text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color)) {
-  .card__img-des {
-    text-stroke: 1px var(--text-stroke-color);
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-    text-shadow: none;
-  }
-}
+
 
 .card__img-des {
   font-family: var(--pressstart2p), sans-serif;
@@ -121,10 +115,16 @@
   top: 25px;
   right: 25px;
   opacity: 0.5;
-  text-shadow: 1px rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(255, 255, 255);
 }
 
-
+@supports (text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color)) {
+  .card__img-des {
+    text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
+  }
+}
 
 .card__main-content {
   padding: 25px;
@@ -133,7 +133,6 @@
 
 .card__text {
   font-size: 18px;
-  font-variation-settings:'wght' var(--fw-main);
   line-height: 21px;
   letter-spacing: normal;
 }
@@ -225,14 +224,12 @@
 /* ============================================ */
 
 .modal__window {
-  margin-bottom: 65px;
+  margin-bottom: 105px;
 }
 
 .dialog {
   max-width: 357px;
-  padding: 28px;
-  max-height: 193px;
-  height: 100%;
+  padding: 30px;
 }
 
 .dialog[open] .dialog__content {
@@ -321,6 +318,7 @@
 
   .modal__btn {
     flex-direction: column;
+    max-width: 306px;
   }
 
   .modal__text {
@@ -344,7 +342,7 @@
 
   .dialog {
     max-width: 341px;
-    max-height: 195px;
+    padding: 30px 40px;
   }
 }
 
